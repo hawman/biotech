@@ -2,14 +2,14 @@ import { products } from '../../data/products';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
-  return products.map((p) => ({ id: p.id }));
+  return products.map((p) => ({ slug: p.id }));
 }
 
-type Props = { params: Promise<{ id: string }> };
+type Props = { params: Promise<{ slug: string }> };
 
 export default async function ProductPage({ params }: Props) {
-  const { id } = await params;
-  const product = products.find((p) => p.id === id);
+  const { slug } = await params;
+  const product = products.find((p) => p.id === slug);
   if (!product) return notFound();
 
   return (
