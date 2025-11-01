@@ -29,8 +29,18 @@ jobs:
         with:
           static_site_generator: next
 
+      - name: Check Next version
+        run: npx next --version
+
       - name: Build with Next.js 🏗️
-        run: npm run build
+        run: |
+          npm run build --verbose
+          echo "📁 Root directory:"
+          ls -alR .
+          echo "📁 .next directory:"
+          ls -alR .next
+          echo "📁 out directory:"
+          ls -alR out || echo "out folder not found"
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
