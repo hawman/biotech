@@ -1,17 +1,19 @@
-import { products } from '../../data/products';
-import { notFound } from 'next/navigation';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { Product, products } from '../../data/products';
 
-export async function generateStaticParams() {
-  return products.map((p) => ({ slug: p.id }));
-}
+export const getStaticPaths: GetStaticPaths = () => {
+  return {
+    paths: products.map((p) => ({ params: { slug: p.id } })),
+    fallback: false,
+  };
+};
 
-type Props = { params: Promise<{ slug: string }> };
+export const getStaticProps: GetStaticProps = ({ params }) => {
+  const product = products.find((p) => p.id === params?.slug);
+  return { props: { product } };
+};
 
-export default async function ProductPage({ params }: Props) {
-  const { slug } = await params;
-  const product = products.find((p) => p.id === slug);
-  if (!product) return notFound();
-
+export default function ProductPage({ product }: { product: Product }) {
   return (
     <div className="space-y-6">
       <div className="bg-white rounded-lg shadow p-6 flex flex-col lg:flex-row gap-6">
