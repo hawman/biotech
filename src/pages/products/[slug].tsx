@@ -26,6 +26,11 @@ export default function ProductPage({ product }: { product: Product }) {
         </div>
         <div className="flex-1">
           <h1 className="text-2xl font-semibold">{product.name}</h1>
+          <div className="mt-2">
+            <span className="inline-block bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full">
+              {product.category}
+            </span>
+          </div>
           <p className="mt-3 text-slate-600">{product.longDesc}</p>
 
           {product.specs && (
