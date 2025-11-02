@@ -12,7 +12,7 @@ export default function Support() {
               href="mailto:techsupport@acmebiotech.example"
               className="text-indigo-600"
             >
-              techsupport@acmebiotech.example
+              techsupport@mdxbiotech.example
             </a>{' '}
             or call +1 (555) 555-5555.
           </p>
@@ -25,7 +25,7 @@ export default function Support() {
               href="mailto:sales@acmebiotech.example"
               className="text-indigo-600"
             >
-              sales@acmebiotech.example
+              sales@mdxbiotech.example
             </a>
             .
           </p>

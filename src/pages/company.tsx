@@ -1,10 +1,10 @@
 export default function Company() {
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-semibold">About Acme Biotech</h1>
+      <h1 className="text-2xl font-semibold">About MDx Biotechnology</h1>
       <div className="bg-white p-6 rounded-lg shadow">
         <p className="text-slate-700">
-          Acme Biotech specializes in molecular diagnostic solutions. Our
+          MDx Biotechnology specializes in molecular diagnostic solutions. Our
           mission is to deliver high-quality products for researchers,
           clinicians, and diagnostic labs.
         </p>

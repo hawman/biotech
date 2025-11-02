@@ -8,9 +8,9 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-3">
               <div className="h-9 w-9 rounded bg-indigo-600 flex items-center justify-center text-white font-bold">
-                AB
+                MDx
               </div>
-              <span className="font-semibold">Acme Biotech</span>
+              <span className="font-semibold">MDx Biotechnology</span>
             </Link>
           </div>
 
@@ -20,6 +20,9 @@ export default function Navbar() {
             </Link>
             <Link href="/products" className="text-sm">
               Products
+            </Link>
+            <Link href="/services" className="text-sm">
+              Services
             </Link>
             <Link href="/company" className="text-sm">
               Company

@@ -50,7 +50,7 @@ export default function ProductPage({ product }: { product: Product }) {
               Request Quote
             </a>
             <a
-              href="mailto:sales@acmebiotech.example"
+              href="mailto:sales@mdxbiotech.example"
               className="inline-block px-4 py-2 border rounded-md"
             >
               Contact Sales

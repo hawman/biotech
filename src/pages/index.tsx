@@ -7,7 +7,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row gap-6 items-center">
           <div className="flex-1">
             <h1 className="text-3xl font-semibold">
-              Acme Biotech — Molecular Diagnostics
+              MDx Biotechnology — Molecular Diagnostics
             </h1>
             <p className="mt-3 text-slate-600">
               Quality PCR kits and reagents for research and diagnostics. Simple

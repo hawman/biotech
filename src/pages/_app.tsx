@@ -25,7 +25,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <Head>
-        <title>Acme Biotech</title>
+        <title>MDx Biotechnology</title>
       </Head>
       <Navbar />
       <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
