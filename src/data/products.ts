@@ -18,7 +18,7 @@ export const products: Product[] = [
     shortDesc: 'Ready-to-use master mix for routine PCR applications.',
     longDesc: 'A complete 2X master mix containing Taq DNA polymerase, dNTPs, MgCl2, and optimized reaction buffer. Ideal for everyday PCR applications with amplicons up to 3 kb.',
     specs: {
-      Format: '2x Master Mix',
+      Format: '2x Master Mix, 1mL',
       'Reaction volume': '25-50 µL',
       'Extension rate': '1 kb/min',
       'Shelf life': '12 months (4°C)',
@@ -32,7 +32,7 @@ export const products: Product[] = [
     shortDesc: 'Enhanced specificity with hot-start technology.',
     longDesc: 'Hot-start PCR master mix designed to prevent non-specific amplification. Perfect for complex templates and multiplexing.',
     specs: {
-      Format: '2x Master Mix',
+      Format: '2x Master Mix, 1mL',
       'Activation time': '2 min at 95°C',
       'Fidelity': '1x Taq',
       Storage: '-20°C',
@@ -76,7 +76,7 @@ export const products: Product[] = [
     shortDesc: 'Convenient single-tube RT-PCR solution.',
     longDesc: 'Complete system for first-strand cDNA synthesis and PCR amplification in a single tube. Optimized buffer system ensures high yield and sensitivity.',
     specs: {
-      Format: 'All-in-one mix',
+      Format: 'All-in-one mix, 1mL',
       'RT step': '45°C for 10 min',
       'Sensitivity': '<10 copies',
     },

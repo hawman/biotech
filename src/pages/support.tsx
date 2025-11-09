@@ -9,12 +9,12 @@ export default function Support() {
           <p className="mt-2 text-slate-600">
             For protocol help or troubleshooting, email{' '}
             <a
-              href="mailto:techsupport@acmebiotech.example"
+              href="mailto:techsupport@mdxbiotech.com"
               className="text-indigo-600"
             >
-              techsupport@mdxbiotech.example
+              techsupport@mdxbiotech.com
             </a>{' '}
-            or call +1 (555) 555-5555.
+            or call +60 (3) 7972-9002.
           </p>
         </div>
         <div>
@@ -22,10 +22,10 @@ export default function Support() {
           <p className="mt-2 text-slate-600">
             For quotes, pricing, and orders:{' '}
             <a
-              href="mailto:sales@acmebiotech.example"
+              href="mailto:info@mdxbiotech.com"
               className="text-indigo-600"
             >
-              sales@mdxbiotech.example
+              info@mdxbiotech.com
             </a>
             .
           </p>

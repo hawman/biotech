@@ -3,16 +3,16 @@ import React from 'react';
 const ServicesPage = () => {
   const services = [
     {
-      title: 'Customized Molecular Biology',
-      description: 'Tailored molecular biology solutions to meet your specific research needs. Our expert team provides customized DNA/RNA manipulation, cloning, and sequence analysis services with precision and reliability.',
+      title: 'Customised Molecular Biology Solutions',
+      description: 'We specialise in R&D and product development with a focus on PCR technologies.',
     },
     {
       title: 'PCR Services',
-      description: 'Comprehensive PCR services including standard PCR, real-time PCR, and digital PCR with rapid turnaround times. We offer optimization, validation, and high-throughput screening capabilities.',
+      description: 'Comprehensive PCR services including standard PCR, real-time PCR, and digital PCR (in progress) with rapid turnaround times. We offer optimisation, validation, and high-throughput screening capabilities. Offering full-suite services including assay design, optimisation, and reagents.',
     },
     {
-      title: 'Enzyme Innovation',
-      description: 'Cutting-edge enzyme engineering and optimization services. We develop and customize enzymes for industrial applications, improving efficiency and sustainability in bioprocessing.',
+      title: 'Enzyme-buffer Innovation',
+      description: 'Developing modified enzyme and buffer combinations that significantly boost PCR performance.',
     },
   ];
 

@@ -4,8 +4,8 @@ export default function Company() {
       <h1 className="text-2xl font-semibold">About MDx Biotechnology</h1>
       <div className="bg-white p-6 rounded-lg shadow">
         <p className="text-slate-700">
-          MDx Biotechnology specializes in molecular diagnostic solutions. Our
-          mission is to deliver high-quality products for researchers,
+          MDx Biotechnology specialises in (q)PCR-based molecular diagnostic solutions. Our
+          mission is to deliver high-quality products and services for researchers,
           clinicians, and diagnostic labs.
         </p>
 
@@ -13,7 +13,7 @@ export default function Company() {
           <div className="p-4 border rounded">
             <h4 className="font-medium">Mission</h4>
             <p className="text-sm text-slate-600 mt-2">
-              Deliver reliable, validated assay kits that simplify workflows.
+              Deliver reliable, high-performance, validated assay kits with simplified workflows.
             </p>
           </div>
           <div className="p-4 border rounded">
@@ -25,7 +25,7 @@ export default function Company() {
           <div className="p-4 border rounded">
             <h4 className="font-medium">Contact</h4>
             <p className="text-sm text-slate-600 mt-2">
-              Head office: 123 BioTech Ave, Science City
+              Office & Lab: 13B Faber Plaza, Jalan Desa Jaya, Taman Desa, 58100 Kuala Lumpur, MALAYSIA.
             </p>
           </div>
         </div>

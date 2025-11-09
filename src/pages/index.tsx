@@ -7,7 +7,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row gap-6 items-center">
           <div className="flex-1">
             <h1 className="text-3xl font-semibold">
-              MDx Biotechnology — Molecular Diagnostics
+              MDx BIOTECHNOLOGY
             </h1>
             <p className="mt-3 text-slate-600">
               Quality PCR kits and reagents for research and diagnostics. Simple
@@ -43,7 +43,7 @@ export default function Home() {
         <div className="bg-white p-5 rounded-lg shadow">
           <h3 className="text-lg font-medium">Trusted Performance</h3>
           <p className="mt-2 text-slate-600">
-            Rigorously validated kits with consistent sensitivity and
+            Rigourously validated kits with consistent sensitivity and
             specificity.
           </p>
         </div>
@@ -83,7 +83,7 @@ export default function Home() {
           <article className="border rounded p-4">
             <h4 className="font-medium">qPCR Master Mix</h4>
             <p className="text-sm text-slate-600 mt-2">
-              Optimized master mix for quantitative PCR.
+              Optimised master mix for quantitative PCR.
             </p>
             <div className="mt-3">
               <Link
