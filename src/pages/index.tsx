@@ -69,7 +69,10 @@ export default function Home() {
               <h4 className="font-medium">{product.name}</h4>
               <p className="text-sm text-slate-600 mt-2">{product.shortDesc}</p>
               <div className="mt-3">
-                <Link href={product.image} className="text-indigo-600 text-sm">
+                <Link
+                  href={`/products/${product.id}`}
+                  className="text-indigo-600 text-sm"
+                >
                   View product →
                 </Link>
               </div>
