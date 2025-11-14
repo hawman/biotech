@@ -8,6 +8,14 @@ export type Product = {
   specs?: Record<string, string>;
 };
 
+  // Order categories as specified
+  export const categoryOrder = [
+    'General PCR',
+    'Hi-Fidelity & Long PCR',
+    'RT/RT-PCR',
+    'cDNA Synthesis',
+  ];
+
 export const products: Product[] = [
   // General PCR Category
   {

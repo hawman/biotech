@@ -1,3 +1,4 @@
+import { products } from '@/data/products';
 import Link from 'next/link';
 
 export default function Home() {
@@ -6,9 +7,7 @@ export default function Home() {
       <div className="rounded-lg bg-white shadow p-6">
         <div className="flex flex-col lg:flex-row gap-6 items-center">
           <div className="flex-1">
-            <h1 className="text-3xl font-semibold">
-              MDx BIOTECHNOLOGY
-            </h1>
+            <h1 className="text-3xl font-semibold">MDx BIOTECHNOLOGY</h1>
             <p className="mt-3 text-slate-600">
               Quality PCR kits and reagents for research and diagnostics. Simple
               workflows, reliable performance.
@@ -65,50 +64,17 @@ export default function Home() {
       <div className="bg-white p-6 rounded-lg shadow">
         <h2 className="text-xl font-semibold">Featured Products</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <article className="border rounded p-4">
-            <h4 className="font-medium">PCR Detection Kit</h4>
-            <p className="text-sm text-slate-600 mt-2">
-              Sensitive detection kit for research applications.
-            </p>
-            <div className="mt-3">
-              <Link
-                href="/products/pcr-kit-01"
-                className="text-indigo-600 text-sm"
-              >
-                View product →
-              </Link>
-            </div>
-          </article>
-
-          <article className="border rounded p-4">
-            <h4 className="font-medium">qPCR Master Mix</h4>
-            <p className="text-sm text-slate-600 mt-2">
-              Optimised master mix for quantitative PCR.
-            </p>
-            <div className="mt-3">
-              <Link
-                href="/products/qpcr-mix-01"
-                className="text-indigo-600 text-sm"
-              >
-                View product →
-              </Link>
-            </div>
-          </article>
-
-          <article className="border rounded p-4">
-            <h4 className="font-medium">Extraction Kit</h4>
-            <p className="text-sm text-slate-600 mt-2">
-              Fast nucleic acid extraction for downstream PCR.
-            </p>
-            <div className="mt-3">
-              <Link
-                href="/products/extract-01"
-                className="text-indigo-600 text-sm"
-              >
-                View product →
-              </Link>
-            </div>
-          </article>
+          {products.slice(0, 3).map((product) => (
+            <article className="border rounded p-4">
+              <h4 className="font-medium">{product.name}</h4>
+              <p className="text-sm text-slate-600 mt-2">{product.shortDesc}</p>
+              <div className="mt-3">
+                <Link href={product.image} className="text-indigo-600 text-sm">
+                  View product →
+                </Link>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

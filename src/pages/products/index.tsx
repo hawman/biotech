@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { products, Product } from '../../data/products';
+import { products, Product, categoryOrder } from '../../data/products';
 
 export default function ProductsPage() {
   // Group products by category
@@ -13,14 +13,6 @@ export default function ProductsPage() {
     },
     {}
   );
-
-  // Order categories as specified
-  const categoryOrder = [
-    'General PCR',
-    'Hi-Fidelity & Long PCR',
-    'RT/RT-PCR',
-    'cDNA Synthesis',
-  ];
 
   return (
     <div className="space-y-12 whitespace-pre-wrap">
