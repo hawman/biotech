@@ -4,15 +4,18 @@ const ServicesPage = () => {
   const services = [
     {
       title: 'Customised Molecular Biology Solutions',
-      description: 'We specialise in R&D and product development with a focus on PCR technologies.',
+      description:
+        'We specialise in R&D and product development with a focus on PCR technologies.',
     },
     {
       title: 'PCR Services',
-      description: 'Comprehensive PCR services including standard PCR, real-time PCR, and digital PCR (in progress) with rapid turnaround times. We offer optimisation, validation, and high-throughput screening capabilities. Offering full-suite services including assay design, optimisation, and reagents.',
+      description:
+        'Comprehensive PCR services including standard PCR, real-time PCR, and digital PCR (in progress) with rapid turnaround times.\n\nWe offer optimisation, validation, and high-throughput screening capabilities. Offering full-suite services including assay design, optimisation, and reagents.',
     },
     {
       title: 'Enzyme-buffer Innovation',
-      description: 'Developing modified enzyme and buffer combinations that significantly boost PCR performance.',
+      description:
+        'Developing modified enzyme and buffer combinations that significantly boost PCR performance.',
     },
   ];
 

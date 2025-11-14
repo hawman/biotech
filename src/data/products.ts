@@ -26,7 +26,7 @@ export const products: Product[] = [
     shortDesc: 'Ready-to-use master mix for routine PCR applications.',
     longDesc: 'A complete 2X master mix containing Taq DNA polymerase, dNTPs, MgCl2, and optimized reaction buffer. Ideal for everyday PCR applications with amplicons up to 3 kb.',
     specs: {
-      Format: '2x Master Mix, 1mL',
+      Format: '2x Master Mix\n1mL, 5 x 1mL, 10 x 1mL',
       'Reaction volume': '25-50 µL',
       'Extension rate': '1 kb/min',
       'Shelf life': '12 months (4°C)',
