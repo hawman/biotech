@@ -15,7 +15,7 @@ export default function ProductsPage() {
   );
 
   return (
-    <div className="space-y-12 whitespace-pre-wrap">
+    <div className="space-y-12">
       <header className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold">Products</h1>
         <p className="text-sm text-slate-600">Browse our kit catalog</p>
