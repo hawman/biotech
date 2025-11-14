@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-4 h-16">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="MDx Biotechnology"
               width={250}
               height={40}
