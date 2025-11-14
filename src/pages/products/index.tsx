@@ -3,24 +3,27 @@ import { products, Product } from '../../data/products';
 
 export default function ProductsPage() {
   // Group products by category
-  const productsByCategory = products.reduce<Record<string, Product[]>>((acc, product) => {
-    if (!acc[product.category]) {
-      acc[product.category] = [];
-    }
-    acc[product.category].push(product);
-    return acc;
-  }, {});
+  const productsByCategory = products.reduce<Record<string, Product[]>>(
+    (acc, product) => {
+      if (!acc[product.category]) {
+        acc[product.category] = [];
+      }
+      acc[product.category].push(product);
+      return acc;
+    },
+    {}
+  );
 
   // Order categories as specified
   const categoryOrder = [
     'General PCR',
     'Hi-Fidelity & Long PCR',
     'RT/RT-PCR',
-    'cDNA Synthesis'
+    'cDNA Synthesis',
   ];
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 whitespace-pre-wrap">
       <header className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold">Products</h1>
         <p className="text-sm text-slate-600">Browse our kit catalog</p>
@@ -37,7 +40,10 @@ export default function ProductsPage() {
                 key={p.id}
                 className="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <Link href={`/products/${p.id}`} className="block hover:opacity-95">
+                <Link
+                  href={`/products/${p.id}`}
+                  className="block hover:opacity-95"
+                >
                   <div className="h-48 w-full relative">
                     <img
                       src={p.image}

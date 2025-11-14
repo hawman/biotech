@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = ({ params }) => {
 
 export default function ProductPage({ product }: { product: Product }) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 whitespace-pre-wrap">
       <div className="bg-white rounded-lg shadow p-6 flex flex-col lg:flex-row gap-6">
         <div className="lg:w-1/3">
           <img
