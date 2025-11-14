@@ -1,20 +1,25 @@
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="bg-white border-b">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="h-9 w-9 rounded bg-indigo-600 flex items-center justify-center text-white font-bold">
-                MDx
-              </div>
-              <span className="font-semibold">MDx Biotechnology</span>
-            </Link>
-          </div>
+      <div className="container mx-auto sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between px-4 h-16">
+          <Link href="/" className="flex items-center gap-3">
+            <img
+              src="/images/logo.jpg"
+              alt="MDx Biotechnology"
+              width={250}
+              height={40}
+              className="object-contain"
+            />
+          </Link>
 
-          <nav className="hidden md:flex items-center gap-4">
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-sm">
               Home
             </Link>
@@ -32,13 +37,57 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <div className="md:hidden">
-            {/* Simple mobile menu: show a link to products (keeps it accessible). For a full mobile menu, you'd add state & a dropdown. */}
-            <Link href="/products" className="text-sm">
+          {/* Mobile Hamburger */}
+          <button
+            className="md:hidden flex flex-col gap-1.5"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span className={`h-0.5 w-6 bg-black`} />
+            <span className={`h-0.5 w-6 bg-black`} />
+            <span className={`h-0.5 w-6 bg-black`} />
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <nav className="md:hidden flex flex-col gap-4 p-4 border-t">
+            <Link
+              href="/"
+              className="text-sm"
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              href="/products"
+              className="text-sm"
+              onClick={() => setMenuOpen(false)}
+            >
               Products
             </Link>
-          </div>
-        </div>
+            <Link
+              href="/services"
+              className="text-sm"
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <Link
+              href="/company"
+              className="text-sm"
+              onClick={() => setMenuOpen(false)}
+            >
+              Company
+            </Link>
+            <Link
+              href="/support"
+              className="text-sm"
+              onClick={() => setMenuOpen(false)}
+            >
+              Support
+            </Link>
+          </nav>
+        )}
       </div>
     </header>
   );
